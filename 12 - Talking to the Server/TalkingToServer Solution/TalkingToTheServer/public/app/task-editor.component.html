@@ -1,0 +1,64 @@
+﻿<div *ngIf="isEditorDisplayed">
+  <div class="w3-modal">
+    <div class="w3-modal-content">
+      <div>
+        <span class="w3-closebtn w3-margin-16" (click)="close()">×</span>
+        <div>
+
+          <div class="w3-container w3-teal">
+            <h2>Editor</h2>
+          </div>
+
+          <form class="w3-container"
+                #taskForm="ngForm"
+                (ngSubmit)="onSubmit()">
+
+            <div class="w3-group">
+              <label>Description</label>
+              <input [(ngModel)]="updatableTask.description"
+                     ngControl="description" #description="ngForm"
+                     required
+                     class="w3-input">
+              <p *ngIf="!description.valid" class="w3-red">This field is required</p>
+            </div>
+
+            <div class="w3-group">
+              <label>Priority</label>
+              <select [(ngModel)]="updatableTask.priority"
+                      ngControl="priority" #priority="ngForm"
+                      class="w3-select">
+                <option *ngFor="let priority of priorities"
+                        [value]="priority">
+                  {{getNameForPriority(priority)}}
+                </option>
+              </select>
+            </div>
+
+            <div class="w3-group">
+              <label>Start Date</label>
+              <input [(ngModel)]="updatableTask.startDate"
+                     ngControl="startDate" #startDate="ngForm"
+                     class="w3-input" type="date">
+            </div>
+
+            <div class="w3-group">
+              <label>End Date</label>
+              <input [(ngModel)]="updatableTask.endDate"
+                     ngControl="endDate" #endDate="ngForm"
+                     [not-before]="startDate.value"
+                     class="w3-input" type="date">
+              <p *ngIf="endDate.errors?.notBefore" class="w3-red">End date cannot be before start date</p>
+            </div>
+
+            <div class="w3-group">
+              <button type="submit" class="w3-btn w3-padding w3-teal"
+                      [disabled]="!taskForm.valid">Save</button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

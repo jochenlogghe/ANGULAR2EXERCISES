@@ -1,0 +1,21 @@
+﻿.brand-logo img{
+  display: inline-block;
+  height: 75px;
+}
+
+nav#top ul a{
+  font-size: 1.5rem;
+  padding: 0 30px;
+}
+
+nav, nav .nav-wrapper{
+  height: 100px;
+  line-height: 100px;
+}
+
+dt{
+  float:left;
+  width: 200px;
+}
+
+

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <title></title>
+  <link href="lib/materialize-css/css/materialize.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/materialize-css/js/materialize.js"></script>
+
+  <script src="lib/es6-shim/es6-shim.min.js"></script>
+  <script src="lib/systemjs/system-polyfills.js"></script>
+
+  <script src="lib/angular2/angular2-polyfills.js"></script>
+  <script src="lib/systemjs/system.src.js"></script>
+  <script src="lib/rxjs/rx.min.js"></script>
+  <script src="lib/angular2/angular2.dev.js"></script>
+  <script src="lib/angular2/router.dev.js"></script>
+  <script>
+    System.config({
+      packages: {
+        scripts: {
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import("scripts/main")
+          .then(null, console.error.bind(console));
+  </script>
+</head>
+<body>
+  <rabbit-rescue></rabbit-rescue>
+</body>
+</html>

@@ -1,0 +1,23 @@
+﻿<div class="section white">
+  <div class="row container">
+    <div class="col offset-s2 s8" *ngFor="#rabbit of getRabbits()">
+      <div class="card">
+        <div class="" [ngClass]="setClasses(rabbit.gender)">
+          <h3>{{rabbit.name}}</h3>
+          <dl class="flow-text">
+            <dt>Age:</dt>
+            <dd>{{rabbit.age}}</dd>
+            <dt>Gender:</dt>
+            <dd>{{rabbit.gender}}</dd>
+            <dt>Vaccinated:</dt>
+            <dd>{{rabbit.vaccinated}}</dd>
+            <dt>Desexed:</dt>
+            <dd>{{rabbit.desexed}}</dd>
+            <dt>Adoption Fee:</dt>
+            <dd>{{rabbit.adoptionFee}}€</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

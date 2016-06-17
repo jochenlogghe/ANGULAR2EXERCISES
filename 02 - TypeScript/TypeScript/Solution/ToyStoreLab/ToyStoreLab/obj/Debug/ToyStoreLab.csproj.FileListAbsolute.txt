@@ -1,0 +1,6 @@
+C:\Users\jlgg\Documents\Projects\UANG2 - LabFiles\02 - TypeScript\TypeScript\Solution\ToyStoreLab\ToyStoreLab\bin\ToyStoreLab.dll.config
+C:\Users\jlgg\Documents\Projects\UANG2 - LabFiles\02 - TypeScript\TypeScript\Solution\ToyStoreLab\ToyStoreLab\bin\ToyStoreLab.dll
+C:\Users\jlgg\Documents\Projects\UANG2 - LabFiles\02 - TypeScript\TypeScript\Solution\ToyStoreLab\ToyStoreLab\bin\ToyStoreLab.pdb
+C:\Users\jlgg\Documents\Projects\UANG2 - LabFiles\02 - TypeScript\TypeScript\Solution\ToyStoreLab\ToyStoreLab\obj\Debug\ToyStoreLab.csprojResolveAssemblyReference.cache
+C:\Users\jlgg\Documents\Projects\UANG2 - LabFiles\02 - TypeScript\TypeScript\Solution\ToyStoreLab\ToyStoreLab\obj\Debug\ToyStoreLab.dll
+C:\Users\jlgg\Documents\Projects\UANG2 - LabFiles\02 - TypeScript\TypeScript\Solution\ToyStoreLab\ToyStoreLab\obj\Debug\ToyStoreLab.pdb
